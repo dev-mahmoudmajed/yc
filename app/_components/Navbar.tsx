@@ -29,7 +29,7 @@ const Navbar = async () => {
                   <span className="text-black">Sign Out</span>
                 </button>
               </form>
-              <Link href={`/user/${session?.id}`}>
+              <Link href={`/user/${session?.user?.id}`}>
                 <span className="text-black">{session?.user?.name}</span>
               </Link>
             </>
@@ -46,3 +46,5 @@ const Navbar = async () => {
 }
 
 export default Navbar;
+
+
